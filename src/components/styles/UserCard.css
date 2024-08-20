@@ -1,0 +1,72 @@
+.user {
+	width: 100%;
+	max-width: 20em;
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px 3px #0002;
+/* Separa el contenido del contenedor : padding */
+	padding: 1.5em 1em 2em;
+	background-color: rgb(126, 203, 38);
+	transition: scale 0.3s ease;
+	&:hover {
+		scale: 0.95;
+		background-color:  rgb(83, 128, 31);;
+	}
+
+	.user__img {
+		width: 70%;
+		aspect-ratio: 1;
+		object-fit: cover;
+		border-radius: 50%;
+		margin: 0 auto 2em;
+	}
+
+	.user__name {
+		font-size: 1.5em;
+	}
+
+	.user__hr {
+		margin: 0.5em 0;
+		border-color: #0001;
+	}
+
+	.user__list {
+		gap: 0.7em;
+		margin-bottom: 1.1em;
+		.user__item {
+			gap: 0.2em;
+			.user__label {
+				font-size: 1.2em;
+				padding-left: 1em;
+				color: #999;
+				text-transform: uppercase;
+			}
+
+			.user__value {
+				font-size: 1.2em;
+			}
+		}
+	}
+
+	.user__footer {
+		gap: 1em;
+		.user__btn {
+			font-size: 1.5em;
+			width: 50%;
+			padding: 0.5em 0;
+			border-radius: 0.3em;
+			color: #ffffff;
+			transition: filter 0.5s ease;
+			&:hover {
+				filter: brightness(1.2);
+			}
+		}
+
+		.user__delete {
+			background-color: #f00;
+		}
+
+		.user__edit {
+			background-color: #999;
+		}
+	}
+}
