@@ -24,7 +24,6 @@ const FormUser = ({
 
   const submit = (data) => {
     if (userSelected) {
-      // Yo quiero que se envie la informacion actualizada
       updateUser(userSelected.id, data);
       setUserSelected();
       Swal.fire({
